@@ -1,0 +1,22 @@
+Name,protocols,source_addresses,destination_fqdns,priority
+Secure-ConnectionControlPlane_AKS,Http:80;Https:443,10.64.14.0/23,*.hcp.westeurope.azmk8s.io,300
+Prademo to MCR,Http:80;Https:443,10.64.14.0/23,mcr.microsoft.com,300
+Prademo to MCR CDN,Http:80;Https:443,10.64.14.0/23,"*.data.mcr.microsoft.com, mcr-0001.mcr-msedge.net",300
+Prademo to Azure Management,Http:80;Https:443,10.64.14.0/23,management.azure.com,300
+Prademo to Microsoft Entra,Http:80;Https:443,10.64.14.0/23,login.microsoftonline.com,300
+Prademo to Microsoft Packages,Http:80;Https:443,10.64.14.0/23,packages.microsoft.com,300
+Prademo to ACS Mirror,Http:80;Https:443,10.64.14.0/23,acs-mirror.azureedge.net,300
+Prademo to AKS Packages,Http:80;Https:443,10.64.14.0/23,packages.aks.azure.com,300
+Prademo to ODS OpInsights,Http:80;Https:443,10.64.14.0/23,*.ods.opinsights.azure.com,300
+Prademo to OMS OpInsights,Http:80;Https:443,10.64.14.0/23,*.oms.opinsights.azure.com,300
+Prademo to Visual Studio Services,Http:80;Https:443,10.64.14.0/23,"dc.services.visualstudio.com, dev.azure.com, vstsagentpackage.azureedge.net, vssps.dev.azure.com",300
+Prademo to Azure Monitoring,Http:80;Https:443,10.64.14.0/23,*.monitoring.azure.com,300
+Prademo to Global Handler Control Monitor,Http:80;Https:443,10.64.14.0/23,"global.handler.control.monitor.azure.com, westeurope.handler.control.monitor.azure.com, edr-neu.eu.endpoint.security.microsoft.com",300
+Prademo to Ingest Monitor,Http:80;Https:443,10.64.14.0/23,*.ingest.monitor.azure.com,300
+Prademo to Metrics Ingest Monitor,Http:80;Https:443,10.64.14.0/23,*.metrics.ingest.monitor.azure.com,300
+Prademo to Data Policy,Http:80;Https:443,10.64.14.0/23,data.policy.core.windows.net,300
+Prademo to Store Policy,Http:80;Https:443,10.64.14.0/23,store.policy.core.windows.net,300
+Prademo to KeyVault Policy,Http:80;Https:443,10.64.14.0/23,vault.azure.net,300
+Prademo to Ubuntu Security,Http:80,10.64.14.0/23,"security.ubuntu.com, azure.arulecollectionhive.ubuntu.com, changelogs.ubuntu.com",300
+Prademo to Ubuntu Snapshot,Http:80;Https:443,10.64.14.0/23,snapshot.ubuntu.com,300
+Prademo to Registry packages,Http:80;Https:443,10.64.14.0/23,"registry-1.docker.io, registry.k8s.io, quay.io, cdn01.quay.io, auth.docker.io, *docker.pkg.dev, grafana.org, production.cloudflare.docker.com, europe-west4-docker.pkg.dev, d39mqg4b1dx9z1.cloudfront.net",300

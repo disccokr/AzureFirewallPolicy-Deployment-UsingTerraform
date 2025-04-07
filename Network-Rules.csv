@@ -1,0 +1,9 @@
+Name,priority,protocols,source_addresses,destination_addresses,destination_ports
+Prademo to Azure CR,200,TCP,10.64.14.0/23,AzureContainerRegistry,443
+Prademo to Control Plane,200,UDP,10.64.14.0/23,AzureCloud.westeurope,1194
+Prademo to Control Plane Region,200,TCP,10.64.14.0/23,AzureCloud.westeurope,9000
+Prademo to Secure Control Plane Region,200,TCP,10.64.14.0/23,AzureCloud.westeurope,22
+Prademo to Custom DNS,200,UDP,10.64.14.0/23,"10.64.23.101, 10.64.23.102",53
+Prademo to Azure Monitor,200,TCP,10.64.14.0/23,AzureMonitor,443
+AGW to Prademo Ingres,200,TCP,10.81.16.0/24,10.64.14.0/23,"8080, 443"
+Prademo to AGW Outbound,200,TCP,10.64.14.0/23,10.81.16.0/24,"8080, 443"
