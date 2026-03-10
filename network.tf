@@ -1,7 +1,7 @@
 provider "azurerm" {
   features {}
 
-  subscription_id = "ae916b56-965b-43e0-8be7-5341d955c5c4"
+  subscription_id = "aXXXXXXXXXXXXXXXXXXXXXX"
 }
 
 data "external" "csv_rules" {
@@ -10,7 +10,7 @@ data "external" "csv_rules" {
 
 resource "azurerm_firewall_policy_rule_collection_group" "example" {
   name               = "Prademo-demo-rcg1"
-  firewall_policy_id = "/subscriptions/ae916b56-965b-43e0-8be7-5341d955c5c4/resourceGroups/ResourceGroupNametaewon-test-network-krc-rg001/providers/Microsoft.Network/firewallPolicies/taewon-network-fw-policy"
+  firewall_policy_id = "/subscriptions/방화벽위치한 구독 id/resourceGroups/taewon-test-network-krc-rg001/providers/Microsoft.Network/firewallPolicies/taewon-network-fw-policy"
   priority           = 14000
 
   # Network Rule Collection
